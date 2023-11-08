@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Parcel template
 
 Acest proiect a fost creat cu ajutorul Parcel. Pentru familiarizare și configurarea funcțiilor suplimentare [consultați documentația](https://parceljs.org/).
@@ -73,3 +74,6 @@ Dacă se deschide o pagină goală, asigură-te că fila `Console` nu conține e
 1. După fiecare push în ramura `main` a repository-ului GitHub, este rulat un script special (GitHub Action) din fișierul `.github/workflows/deploy.yml`.
 2. Vor fi copiate toate fișierele din repository pe server, unde proiectul va fi inițializat și va trece prin procesul de construcție înainte de implementare
 3. Dacă toți pașii sunt executați cu succes, versiunea de producție asamblată a fișierelor proiectului este trimisă la ramura `gh-pages`. În caz contrar, în jurnalul de execuție al scriptului va fi indicată problema.
+=======
+# goit-js-hw-08
+>>>>>>> 560bd7ea2e0d5ac48e3c88bb61646dba6f883c51
