@@ -17,6 +17,7 @@ const updateAndStoreState = throttle(() => {
   );
 }, 500);
 
+
 emailInput.addEventListener('input', event => {
   feedbackFormState.email = event.target.value;
   updateAndStoreState();
@@ -32,3 +33,16 @@ form.addEventListener('submit', function (event) {
   localStorage.removeItem('feedback-form-state');
   console.log(JSON.stringify(feedbackFormState));
 });
+
+
+
+function loadFormData() {
+  const storedState = localStorage.getItem('feedback-form-state');
+
+  if (storedState) {
+    feedbackFormState = JSON.parse(storedState);
+    emailInput.value = feedbackFormState.email;
+    messageInput.value = feedbackFormState.message;
+  }
+}
+loadFormData();
